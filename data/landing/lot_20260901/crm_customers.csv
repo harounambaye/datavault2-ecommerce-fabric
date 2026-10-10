@@ -1,0 +1,13 @@
+customer_id,first_name,last_name,email,phone,city,country,segment
+C001,Mamadou,Diallo,mamadou.diallo@mail.example,+221 77 100 10 20,Dakar,Sénégal,Particulier
+C002,Fatou,Sow,fatou.sow@mail.example,+221 77 101 11 21,Dakar,Sénégal,Particulier
+C003,Awa,Ndiaye,awa.ndiaye@mail.example,+221 77 102 12 22,Dakar,Sénégal,Particulier
+C004,Ousmane,Fall,ousmane.fall@mail.example,+221 77 103 13 23,Thiès,Sénégal,Professionnel
+C005,Aminata,Ba,aminata.ba@mail.example,+221 77 104 14 24,Saint-Louis,Sénégal,Particulier
+C006,Cheikh,Diop,cheikh.diop@mail.example,+221 77 105 15 25,Dakar,Sénégal,Professionnel
+C007,Mariama,Sarr,mariama.sarr@mail.example,+221 77 106 16 26,Kaolack,Sénégal,Particulier
+C008,Ibrahima,Gueye,ibrahima.gueye@mail.example,+221 77 107 17 27,Ziguinchor,Sénégal,Particulier
+C009,Khady,Faye,khady.faye@mail.example,+221 77 108 18 28,Dakar,Sénégal,Particulier
+C010,Moussa,Cissé,moussa.cisse@mail.example,+221 77 109 19 29,Thiès,Sénégal,Particulier
+C011,Ndeye,Mbaye,ndeye.mbaye@mail.example,+221 77 110 20 30,Saint-Louis,Sénégal,Professionnel
+C012,Abdoulaye,Seck,abdoulaye.seck@mail.example,+221 77 111 21 31,Mbour,Sénégal,Particulier

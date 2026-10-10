@@ -1,0 +1,20 @@
+order_id,customer_id,order_date,status,channel,payment_method
+O0037,C010,2026-08-28,LIVREE,Web,Paiement à la livraison
+O0038,C011,2026-08-29,LIVREE,Mobile,Orange Money
+O0039,C006,2026-08-30,LIVREE,Web,Wave
+O0040,C009,2026-08-31,EXPEDIEE,Web,Carte bancaire
+O0041,C002,2026-09-01,LIVREE,Web,Carte bancaire
+O0042,C011,2026-09-01,LIVREE,Mobile,Wave
+O0043,C003,2026-09-01,LIVREE,Web,Carte bancaire
+O0044,C011,2026-09-02,LIVREE,Mobile,Paiement à la livraison
+O0045,C011,2026-09-02,LIVREE,Mobile,Carte bancaire
+O0046,C013,2026-09-03,LIVREE,Web,Carte bancaire
+O0047,C013,2026-09-03,EXPEDIEE,Mobile,Wave
+O0048,C009,2026-09-04,EXPEDIEE,Web,Carte bancaire
+O0049,C006,2026-09-04,EXPEDIEE,Web,Carte bancaire
+O0050,C011,2026-09-05,EXPEDIEE,Web,Carte bancaire
+O0051,C013,2026-09-05,EXPEDIEE,Web,Paiement à la livraison
+O0052,C013,2026-09-06,EN_PREPARATION,Mobile,Orange Money
+O0053,C001,2026-09-06,EN_PREPARATION,Mobile,Orange Money
+O0054,C006,2026-09-07,EN_PREPARATION,Mobile,Orange Money
+O0055,C007,2026-09-07,EN_PREPARATION,Mobile,Carte bancaire
