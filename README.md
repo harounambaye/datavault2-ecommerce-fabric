@@ -8,7 +8,7 @@
 ![Licence](https://img.shields.io/badge/licence-MIT-green)
 
 > Chaîne décisionnelle complète déployée dans le cloud : des fichiers sources jusqu'au tableau de bord,
-> en appliquant les standards **Data Vault 2.0** — historisation native, traçabilité de chaque ligne
+> en appliquant les standards **Data Vault 2.0** - historisation native, traçabilité de chaque ligne
 > et chargements rejouables sans doublon.
 
 ![Tableau de bord Power BI du projet](docs/images/powerbi-dashboard.png)
@@ -125,7 +125,7 @@ recharger la moindre source.
 | `lnk_order_customer` | Link | `hk_order_customer` | Relation commande ↔ client |
 | `lnk_order_line` | Link | `hk_order_line` (+ `line_no`) | Relation commande ↔ produit |
 | `sat_customer_crm` | Satellite de hub | `hk_customer` + `load_date` | Nom, e-mail, téléphone, ville, segment |
-| `sat_customer_loyalty` | Satellite de hub | `hk_customer` + `load_date` | Niveau de fidélité, points — **ajouté au lot 2** |
+| `sat_customer_loyalty` | Satellite de hub | `hk_customer` + `load_date` | Niveau de fidélité, points - **ajouté au lot 2** |
 | `sat_product` | Satellite de hub | `hk_product` + `load_date` | Nom, catégorie, prix catalogue |
 | `sat_order` | Satellite de hub | `hk_order` + `load_date` | Date, statut, canal, moyen de paiement |
 | `sat_order_line` | Satellite de link | `hk_order_line` + `load_date` | Quantité, prix unitaire pratiqué |
@@ -146,7 +146,7 @@ Quatre systèmes sources simulés par des fichiers CSV, livrés en deux lots pou
 | `products.csv` | ERP (catalogue) | 15 produits | 15 produits (1 baisse de prix) |
 | `orders.csv` | Site web | 40 commandes | 15 nouvelles, plus 4 changements de statut |
 | `order_lines.csv` | Site web | 87 lignes | 23 lignes |
-| `loyalty_members.csv` | Programme de fidélité | — | 6 membres (**nouvelle source**) |
+| `loyalty_members.csv` | Programme de fidélité | - | 6 membres (**nouvelle source**) |
 
 Les fichiers sont versionnés dans [`data/landing/`](data/landing) et reproductibles avec
 [`data/generate_sample_data.py`](data/generate_sample_data.py) : la graine aléatoire est fixe, le jeu de
@@ -181,9 +181,9 @@ def load_sat(stg, table, hk, attrs):
 
 Deux empreintes structurent tout le chargement :
 
-- **`hash_key`** = `MD5(UPPER(TRIM(clé métier)))` — la même clé est obtenue dans toutes les sources, sans
+- **`hash_key`** = `MD5(UPPER(TRIM(clé métier)))` - la même clé est obtenue dans toutes les sources, sans
   recherche en base : hubs, links et satellites peuvent donc se charger en parallèle ;
-- **`hashdiff`** = `MD5(attributs descriptifs)` — comparer une seule colonne suffit pour détecter un changement.
+- **`hashdiff`** = `MD5(attributs descriptifs)` - comparer une seule colonne suffit pour détecter un changement.
 
 Le chargement du lot 1 crée les dix tables du Raw Vault :
 
@@ -254,8 +254,8 @@ Power BI en mode **Direct Lake**, qui lit les fichiers Delta de OneLake sans imp
 | CA par ville, au moment de la commande | Dakar 1 823 000 · Thiès 638 500 | Dakar 582 500 |
 | CA par ville, situation actuelle | Dakar 1 240 500 · Thiès 1 221 000 | Thiès 582 500 |
 
-En sélectionnant cette cliente, les deux lectures apparaissent côte à côte, et son historique — issu
-directement du satellite — montre ses deux versions successives :
+En sélectionnant cette cliente, les deux lectures apparaissent côte à côte, et son historique - issu
+directement du satellite - montre ses deux versions successives :
 
 ![Rapport filtré sur une cliente](docs/images/powerbi-dashboard-filtered.png)
 
@@ -344,8 +344,12 @@ Le notebook étant idempotent, n'importe quel lot peut être relancé sans crée
 
 ## Auteur et licence
 
-**Harouna MBAYE** — conception du modèle, développement du pipeline, déploiement sur Microsoft Fabric et
+**Harouna MBAYE** - conception du modèle, développement du pipeline, déploiement sur Microsoft Fabric et
 restitution Power BI.
-<!-- Ajoute ici ton lien LinkedIn ou ton portfolio. -->
+
+- GitHub : [@harounambaye](https://github.com/harounambaye)
+- LinkedIn : [Harouna Mbaye](https://www.linkedin.com/in/harouna-mbaye-088926239/)
+- Portfolio :[harouna-mbaye](https://harouna-mbaye.netlify.app/)
+- Email : roonmbaye5@gmail.com
 
 Distribué sous licence [MIT](LICENSE). Les données sont entièrement fictives et générées pour ce projet.
